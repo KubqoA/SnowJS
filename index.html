@@ -2,8 +2,35 @@
 <html>
   <head>
     <title>SnowJS</title>
+    <script src="jquery-1.11.1.min.js"></script>
+	  <script src="snow.js"></script>
+    <style>
+body {
+	background-color: black;
+}
+
+.flake {
+	background-color: white;
+	width: 10px;
+	height: 10px;
+	border-radius: 90px;
+	border: 0px solid;
+	position: absolute;
+}
+
+button#toggle {
+	border: 0px solid;
+	border-radius: 90px;
+	background-color: #999999;
+}
+
+button#toggle:hover {
+	cursor: pointer;
+	background-color: #ADADAD;
+}
+	  </style>
   </head>
   <body>
-    SnowJS example page
+    <button style="float:right;" id="toggle" onclick="$(this).toggleSnow();">Toggle snow!</button>
   </body>
 </html>

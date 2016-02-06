@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
     //Flakes swing animation
     function swing(defaultWidth, element) {
         for(var i=0; i<6; i++) {
-            $(element).animate({'margin-left': defaultWidth-4},249).animate({'margin-left': defaultWidth},249).animate({'margin-left': defaultWidth+4},249).animate({'margin-left': defaultWidth},249);
+            $(element).animate({'left': defaultWidth-4},249).animate({'left': defaultWidth},249).animate({'left': defaultWidth+4},249).animate({'left': defaultWidth},249);
         }
     }
 
@@ -33,9 +33,9 @@ jQuery(document).ready(function ($) {
             startw = 0 + Math.floor(Math.random() * width-18);
             var element = $('<div class="flake"></div>');
             element.appendTo($("body"));
-            $(element).css('margin-left', startw + 'px');
+            $(element).css('left', startw + 'px');
             $(element).animate({
-                'margin-top': height - 18
+                'top': height - 18
             }, {
                 duration: 6000,
                 easing: 'linear',

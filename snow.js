@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
         if (stop) {
             return false;
         } else { //Else start snow
-            var randomTime = 100 + Math.floor(Math.random() * 400);
+            var randomTime = 100 + Math.floor(Math.random() * interval);
             setTimeout(function() { //Generate one flake and after randomTime generate another
                 one();
                 snow();

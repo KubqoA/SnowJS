@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
     var stop = false;
     var width = $(window).width();
     var height = $(window).height();
-    var interval = 500;
+    var interval = 100;
     var startw = 0;
     var delay = 0;
     var fadeTime = 0;
